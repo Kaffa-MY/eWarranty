@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+	<RelativeLayout
+	    android:id="@+id/infoTitle" 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:background="#222">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true"
+	    	android:text="客户信息"
+	    	android:textSize="20sp"
+	    	android:textColor="#eee"/>
+	    <ImageButton 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:onClick="editUserInfo"
+	        android:background="@drawable/icon_edit"/>
+	</RelativeLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/userInfo"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_below="@id/infoTitle">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="账号: ***"
+	        android:textColor="#222"
+	        android:textSize="20sp"
+	        android:padding="10dp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="姓名: ***"
+	        android:textColor="#222"
+	        android:textSize="20sp"
+	        android:padding="10dp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="性别: ***"
+	        android:textColor="#222"
+	        android:textSize="20sp"
+	        android:padding="10dp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="电话: ***"
+	        android:textColor="#222"
+	        android:textSize="20sp"
+	        android:padding="10dp"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="地址: ***"
+	        android:textColor="#222"
+	        android:textSize="20sp"
+	        android:padding="10dp"/>
+	</LinearLayout>
+</RelativeLayout>

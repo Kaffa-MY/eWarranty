@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/details_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#222"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="电子保单详情"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        
+        <ImageButton
+            android:id="@+id/serviceBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_service"
+            android:onClick="ServiceInDetail" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/warrenty_item_normal"
+        android:textSize="15sp"
+        android:text="保单号:1234\n产品:海尔冰箱\n质保期限:\n保单状态:正常使用\n其他信息:" />
+
+</LinearLayout>

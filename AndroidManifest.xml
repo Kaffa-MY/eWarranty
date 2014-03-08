@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kaffa.test.myalipay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="kaffa.test.myalipay.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.LogIn"
+            android:label="@string/title_activity_log_in" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.MainPage"
+            android:label="@string/title_activity_main_page" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.ApplyComplaintActivity"
+            android:label="@string/title_activity_complaint" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.ServiceInDetailsActivity"
+            android:label="@string/title_activity_service_in_details"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.ApplyRepairActivity"
+            android:label="@string/title_activity_apply_repair" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.ApplyChangeActivity"
+            android:label="@string/title_activity_apply_change" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.ApplyReturnActivity"
+            android:label="@string/title_activity_apply_return" >
+        </activity>
+        <activity
+            android:name="kaffa.test.myalipay.UserInfoEditActivity"
+            android:label="@string/title_activity_user_info_edit" >
+        </activity>
+    </application>
+
+</manifest>

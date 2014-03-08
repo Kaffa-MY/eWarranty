@@ -1,17 +1,17 @@
-package kaffa.test.myalipay;
+package kaffa.test.ewarranty;
 
+import kaffa.test.myalipay.R;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.Menu;
 import android.view.Window;
 
-public class ApplyChangeActivity extends Activity {
+public class ApplyComplaintActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_apply_change);
+		setContentView(R.layout.activity_complaint);
 	}
-
-	
 }

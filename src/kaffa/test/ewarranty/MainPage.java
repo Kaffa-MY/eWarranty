@@ -1,8 +1,9 @@
-package kaffa.test.myalipay;
+package kaffa.test.ewarranty;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import kaffa.test.myalipay.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

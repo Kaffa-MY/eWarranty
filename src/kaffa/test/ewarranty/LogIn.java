@@ -1,5 +1,6 @@
-package kaffa.test.myalipay;
+package kaffa.test.ewarranty;
 
+import kaffa.test.myalipay.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;

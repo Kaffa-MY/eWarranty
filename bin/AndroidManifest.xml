@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="kaffa.test.myalipay.MainActivity"
+            android:name="kaffa.test.ewarranty.MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,44 +23,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.LogIn"
+            android:name="kaffa.test.ewarranty.LogIn"
             android:label="@string/title_activity_log_in" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.MainPage"
+            android:name="kaffa.test.ewarranty.MainPage"
             android:label="@string/title_activity_main_page" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.DetailActivity"
+            android:name="kaffa.test.ewarranty.DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.ApplyComplaintActivity"
+            android:name="kaffa.test.ewarranty.ApplyComplaintActivity"
             android:label="@string/title_activity_complaint" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.ServiceInDetailsActivity"
+            android:name="kaffa.test.ewarranty.ServiceInDetailsActivity"
             android:label="@string/title_activity_service_in_details"
-            android:theme="@android:style/Theme.Dialog" >
+            android:theme="@style/ServiceInDetail" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.UserInfoActivity"
+            android:name="kaffa.test.ewarranty.UserInfoActivity"
             android:label="@string/title_activity_user_info" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.ApplyRepairActivity"
+            android:name="kaffa.test.ewarranty.ApplyRepairActivity"
             android:label="@string/title_activity_apply_repair" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.ApplyChangeActivity"
+            android:name="kaffa.test.ewarranty.ApplyChangeActivity"
             android:label="@string/title_activity_apply_change" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.ApplyReturnActivity"
+            android:name="kaffa.test.ewarranty.ApplyReturnActivity"
             android:label="@string/title_activity_apply_return" >
         </activity>
         <activity
-            android:name="kaffa.test.myalipay.UserInfoEditActivity"
+            android:name="kaffa.test.ewarranty.UserInfoEditActivity"
             android:label="@string/title_activity_user_info_edit" >
         </activity>
     </application>

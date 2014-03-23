@@ -69,6 +69,13 @@
             android:label="@string/title_activity_user_info_edit" >
         </activity>
      
+        <activity 
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        
     </application>
 
 </manifest>

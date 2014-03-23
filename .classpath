@@ -4,7 +4,8 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Android Private Libraries"/>
+	<classpathentry kind="lib" path="F:/ProgramData/eclipseworkspace/eWarranty/libs/zxing-core.jar"/>
+	<classpathentry kind="lib" path="F:/ProgramData/eclipseworkspace/eWarranty/libs/android-support-v4.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

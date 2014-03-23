@@ -7,6 +7,11 @@
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
 
     <application
         android:allowBackup="true"
@@ -63,6 +68,7 @@
             android:name="kaffa.test.ewarranty.UserInfoEditActivity"
             android:label="@string/title_activity_user_info_edit" >
         </activity>
+     
     </application>
 
 </manifest>

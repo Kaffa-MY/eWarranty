@@ -3,6 +3,8 @@ package kaffa.test.ewarranty;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.zxing.activity.CaptureActivity;
+
 import kaffa.test.myalipay.R;
 import android.os.Bundle;
 import android.app.Activity;
@@ -265,8 +267,20 @@ public class MainPage extends Activity {
 	}
 
 	public void barCode(View v) {
-		Toast.makeText(getApplicationContext(), "«Î…®√ËÃı¬Î", Toast.LENGTH_SHORT)
-				.show();
+		//Toast.makeText(getApplicationContext(), "«Î…®√ËÃı¬Î", Toast.LENGTH_SHORT).show();
+		Intent openCameraIntent = new Intent(MainPage.this,CaptureActivity.class);
+		startActivityForResult(openCameraIntent, 0);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if (resultCode == RESULT_OK) {
+			Bundle bundle = data.getExtras();
+			String scanRes = bundle.getString("result");
+			Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
+		}
 	}
 
 	public void addEwarranty(View v) {

@@ -1,4 +1,4 @@
-package kaffa.test.ewarranty;
+package sjtu.dclab.kaffa.ewarranty;
 
 import kaffa.test.myalipay.R;
 import android.os.Bundle;

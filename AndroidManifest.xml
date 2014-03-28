@@ -7,11 +7,13 @@
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="18" />
-    
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera"/>
-    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +21,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="kaffa.test.ewarranty.MainActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,54 +30,61 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.LogIn"
+            android:name="sjtu.dclab.kaffa.ewarranty.LogIn"
             android:label="@string/title_activity_log_in" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.MainPage"
+            android:name="sjtu.dclab.kaffa.ewarranty.MainPage"
             android:label="@string/title_activity_main_page" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.DetailActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.ApplyComplaintActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.ApplyComplaintActivity"
             android:label="@string/title_activity_complaint" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.ServiceInDetailsActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.ServiceInDetailsActivity"
             android:label="@string/title_activity_service_in_details"
             android:theme="@style/ServiceInDetail" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.UserInfoActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.UserInfoActivity"
             android:label="@string/title_activity_user_info" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.ApplyRepairActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.ApplyRepairActivity"
             android:label="@string/title_activity_apply_repair" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.ApplyChangeActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.ApplyChangeActivity"
             android:label="@string/title_activity_apply_change" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.ApplyReturnActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.ApplyReturnActivity"
             android:label="@string/title_activity_apply_return" >
         </activity>
         <activity
-            android:name="kaffa.test.ewarranty.UserInfoEditActivity"
+            android:name="sjtu.dclab.kaffa.ewarranty.UserInfoEditActivity"
             android:label="@string/title_activity_user_info_edit" >
         </activity>
-     
-        <activity 
-            android:configChanges="orientation|keyboardHidden"
+        <activity
             android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
-        
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="sjtu.dclab.kaffa.ewarranty.EWarrantyRegActivity"
+            android:label="@string/title_activity_ewarranty_reg" >
+        </activity>
+        <activity
+            android:name="sjtu.dclab.kaffa.ewarranty.UserRegisterActivity"
+            android:label="@string/title_activity_user_register" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,11 +1,12 @@
-package kaffa.test.ewarranty;
+package sjtu.dclab.kaffa.ewarranty;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import kaffa.test.myalipay.R;
+
 import com.zxing.activity.CaptureActivity;
 
-import kaffa.test.myalipay.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -279,7 +280,10 @@ public class MainPage extends Activity {
 		if (resultCode == RESULT_OK) {
 			Bundle bundle = data.getExtras();
 			String scanRes = bundle.getString("result");
-			Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
+			Intent intent = new Intent(getApplicationContext(),EWarrantyRegActivity.class);
+			intent.putExtra("serialNum", scanRes);
+			//Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
+			startActivity(intent);
 		}
 	}
 
@@ -296,4 +300,5 @@ public class MainPage extends Activity {
 	public void editUserInfo(View view) {
 		startActivity(new Intent(getApplicationContext(), UserInfoEditActivity.class));
 	}
+	
 }

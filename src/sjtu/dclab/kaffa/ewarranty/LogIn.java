@@ -1,4 +1,4 @@
-package kaffa.test.ewarranty;
+package sjtu.dclab.kaffa.ewarranty;
 
 import kaffa.test.myalipay.R;
 import android.os.Bundle;
@@ -44,7 +44,8 @@ public class LogIn extends Activity {
 		this.finish();
 	}
 	
-	public void login_pw(View view) {
-		this.finish();
+	public void login_reg(View view) {
+		Intent intent = new Intent(getApplicationContext(),UserRegisterActivity.class);
+		startActivity(intent);
 	}
 }

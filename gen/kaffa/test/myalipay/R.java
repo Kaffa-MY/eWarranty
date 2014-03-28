@@ -82,8 +82,10 @@ public final class R {
         public static final int warrenty_item_pressed=0x7f02001d;
     }
     public static final class id {
-        public static final int action_settings=0x7f07002d;
-        public static final int addEwarranty=0x7f07002c;
+        public static final int EWRegBut=0x7f070018;
+        public static final int SerialNumText=0x7f070017;
+        public static final int action_settings=0x7f07003a;
+        public static final int addEwarranty=0x7f070039;
         public static final int add_item1=0x7f07000d;
         public static final int add_item2=0x7f07000e;
         public static final int add_item3=0x7f07000f;
@@ -99,36 +101,47 @@ public final class R {
         public static final int details_title_bar=0x7f070015;
         public static final int encode_failed=0x7f070004;
         public static final int encode_succeeded=0x7f070005;
-        public static final int forget_passwd=0x7f07001b;
+        public static final int forget_passwd=0x7f07001d;
         public static final int hometitle=0x7f07000c;
-        public static final int img_about=0x7f070022;
-        public static final int img_exp=0x7f070021;
-        public static final int img_home=0x7f070020;
-        public static final int img_more=0x7f070023;
-        public static final int img_tab_now=0x7f07001f;
-        public static final int infoTitle=0x7f070026;
-        public static final int itemIcon=0x7f070028;
-        public static final int itemLab=0x7f070029;
+        public static final int img_about=0x7f070024;
+        public static final int img_exp=0x7f070023;
+        public static final int img_home=0x7f070022;
+        public static final int img_more=0x7f070025;
+        public static final int img_tab_now=0x7f070021;
+        public static final int infoTitle=0x7f070028;
+        public static final int itemIcon=0x7f070035;
+        public static final int itemLab=0x7f070036;
         public static final int launch_product_query=0x7f070006;
-        public static final int login_login_btn=0x7f07001c;
-        public static final int login_passwd_edit=0x7f07001a;
-        public static final int login_reback_btn=0x7f070018;
-        public static final int login_top_layout=0x7f070017;
-        public static final int login_user_edit=0x7f070019;
-        public static final int mainbottom=0x7f07001e;
-        public static final int mainpage=0x7f07001d;
+        public static final int login_login_btn=0x7f07001e;
+        public static final int login_passwd_edit=0x7f07001c;
+        public static final int login_reback_btn=0x7f07001a;
+        public static final int login_top_layout=0x7f070019;
+        public static final int login_user_edit=0x7f07001b;
+        public static final int mainbottom=0x7f070020;
+        public static final int mainpage=0x7f07001f;
         public static final int preview_view=0x7f070010;
         public static final int quit=0x7f070007;
         public static final int restart_preview=0x7f070008;
         public static final int return_scan_result=0x7f070009;
         public static final int search_book_contents_failed=0x7f07000a;
         public static final int search_book_contents_succeeded=0x7f07000b;
-        public static final int searchbttn=0x7f07002b;
+        public static final int searchbttn=0x7f070038;
         public static final int serviceBttn=0x7f070016;
-        public static final int serviceInDetailItem=0x7f070025;
-        public static final int serviceItems=0x7f07002a;
-        public static final int tabpager=0x7f070024;
-        public static final int userInfo=0x7f070027;
+        public static final int serviceInDetailItem=0x7f070027;
+        public static final int serviceItems=0x7f070037;
+        public static final int tabpager=0x7f070026;
+        public static final int userInfo=0x7f070029;
+        public static final int usr_reg_addr=0x7f070033;
+        public static final int usr_reg_addr_t=0x7f070032;
+        public static final int usr_reg_email=0x7f07002f;
+        public static final int usr_reg_email_t=0x7f07002e;
+        public static final int usr_reg_name=0x7f07002b;
+        public static final int usr_reg_name_t=0x7f07002a;
+        public static final int usr_reg_psswd=0x7f07002d;
+        public static final int usr_reg_psswd_t=0x7f07002c;
+        public static final int usr_reg_send=0x7f070034;
+        public static final int usr_reg_tel=0x7f070031;
+        public static final int usr_reg_tel_t=0x7f070030;
         public static final int viewfinder_view=0x7f070011;
     }
     public static final class layout {
@@ -138,16 +151,18 @@ public final class R {
         public static final int activity_capture=0x7f030003;
         public static final int activity_complaint=0x7f030004;
         public static final int activity_detail=0x7f030005;
-        public static final int activity_log_in=0x7f030006;
-        public static final int activity_main=0x7f030007;
-        public static final int activity_main_page=0x7f030008;
-        public static final int activity_service_in_details=0x7f030009;
-        public static final int activity_user_info_edit=0x7f03000a;
-        public static final int service_item=0x7f03000b;
-        public static final int tab_about=0x7f03000c;
-        public static final int tab_exp=0x7f03000d;
-        public static final int tab_home=0x7f03000e;
-        public static final int tab_more=0x7f03000f;
+        public static final int activity_ewarranty_reg=0x7f030006;
+        public static final int activity_log_in=0x7f030007;
+        public static final int activity_main=0x7f030008;
+        public static final int activity_main_page=0x7f030009;
+        public static final int activity_service_in_details=0x7f03000a;
+        public static final int activity_user_info_edit=0x7f03000b;
+        public static final int activity_user_register=0x7f03000c;
+        public static final int service_item=0x7f03000d;
+        public static final int tab_about=0x7f03000e;
+        public static final int tab_exp=0x7f03000f;
+        public static final int tab_home=0x7f030010;
+        public static final int tab_more=0x7f030011;
     }
     public static final class menu {
         public static final int apply_change=0x7f0a0000;
@@ -155,13 +170,15 @@ public final class R {
         public static final int apply_return=0x7f0a0002;
         public static final int complaint=0x7f0a0003;
         public static final int detail=0x7f0a0004;
-        public static final int log_in=0x7f0a0005;
-        public static final int main=0x7f0a0006;
-        public static final int main_page=0x7f0a0007;
-        public static final int service_in_details=0x7f0a0008;
-        public static final int user_info=0x7f0a0009;
-        public static final int user_info_edit=0x7f0a000a;
-        public static final int welcome=0x7f0a000b;
+        public static final int ewarranty_reg=0x7f0a0005;
+        public static final int log_in=0x7f0a0006;
+        public static final int main=0x7f0a0007;
+        public static final int main_page=0x7f0a0008;
+        public static final int service_in_details=0x7f0a0009;
+        public static final int user_info=0x7f0a000a;
+        public static final int user_info_edit=0x7f0a000b;
+        public static final int user_register=0x7f0a000c;
+        public static final int welcome=0x7f0a000d;
     }
     public static final class raw {
         public static final int beep=0x7f040000;
@@ -176,12 +193,14 @@ public final class R {
         public static final int title_activity_apply_return=0x7f08000c;
         public static final int title_activity_complaint=0x7f080007;
         public static final int title_activity_detail=0x7f080006;
+        public static final int title_activity_ewarranty_reg=0x7f08000e;
         public static final int title_activity_log_in=0x7f080004;
         public static final int title_activity_main=0x7f080001;
         public static final int title_activity_main_page=0x7f080005;
         public static final int title_activity_service_in_details=0x7f080008;
         public static final int title_activity_user_info=0x7f080009;
         public static final int title_activity_user_info_edit=0x7f08000d;
+        public static final int title_activity_user_register=0x7f08000f;
     }
     public static final class style {
         /** 

@@ -15,5 +15,7 @@
     <string name="title_activity_apply_change">ApplyChangeActivity</string>
     <string name="title_activity_apply_return">ApplyReturnActivity</string>
     <string name="title_activity_user_info_edit">UserInfoEditActivity</string>
+    <string name="title_activity_ewarranty_reg">EWarrantyRegActivity</string>
+    <string name="title_activity_user_register">UserRegisterActivity</string>
 
 </resources>

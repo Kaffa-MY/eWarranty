@@ -268,28 +268,38 @@ public class MainPage extends Activity {
 	}
 
 	public void barCode(View v) {
-		//Toast.makeText(getApplicationContext(), "请扫描条码", Toast.LENGTH_SHORT).show();
-		Intent openCameraIntent = new Intent(MainPage.this,CaptureActivity.class);
-		startActivityForResult(openCameraIntent, 0);
+//		//Toast.makeText(getApplicationContext(), "请扫描条码", Toast.LENGTH_SHORT).show();
+//		Intent openCameraIntent = new Intent(MainPage.this,CaptureActivity.class);
+//		startActivityForResult(openCameraIntent, 0);
+	}
+	
+	public void addEwarranty(View v) {
+		Toast.makeText(getApplicationContext(), "添加电子保单\n请扫描条码", Toast.LENGTH_SHORT)
+				.show();
+		Intent intent = new Intent(getApplicationContext(),CaptureActivity.class);
+		startActivityForResult(intent, 0);
 	}
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
+//		super.onActivityResult(requestCode, resultCode, data);
+//		if (resultCode == RESULT_OK) {
+//			Bundle bundle = data.getExtras();
+//			String scanRes = bundle.getString("result");
+//			Intent intent = new Intent(getApplicationContext(),EWarrantyRegActivity.class);
+//			intent.putExtra("serialNum", scanRes);
+//			//Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
+//			startActivity(intent);
+//		}
 		super.onActivityResult(requestCode, resultCode, data);
 		if (resultCode == RESULT_OK) {
 			Bundle bundle = data.getExtras();
 			String scanRes = bundle.getString("result");
-			Intent intent = new Intent(getApplicationContext(),EWarrantyRegActivity.class);
+			Intent intent = new Intent(getApplicationContext(),WarrantCardCreatActivity.class);
 			intent.putExtra("serialNum", scanRes);
-			//Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
 			startActivity(intent);
 		}
-	}
-
-	public void addEwarranty(View v) {
-		Toast.makeText(getApplicationContext(), "添加电子保单", Toast.LENGTH_SHORT)
-				.show();
 	}
 
 	public void showWarrantyDetails(View v) {

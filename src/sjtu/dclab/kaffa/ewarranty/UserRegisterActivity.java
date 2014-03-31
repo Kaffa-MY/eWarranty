@@ -1,6 +1,7 @@
 package sjtu.dclab.kaffa.ewarranty;
 
-import org.apache.http.protocol.HTTP;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import sjtu.dclab.kaffa.ewarranty.domain.CustomerCard;
 import sjtu.dclab.kaffa.ewarranty.webserv.CustomerRegServ;
@@ -12,6 +13,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.app.Activity;
+import android.content.Intent;
 
 public class UserRegisterActivity extends Activity {
 	private EditText usernameEditText;
@@ -20,7 +22,7 @@ public class UserRegisterActivity extends Activity {
 	private EditText telEditText;
 	private EditText addrEditText;
 	
-	class CusRegTask extends AsyncTask<CustomerCard, Void, Integer>{
+	class CusRegTask extends AsyncTask<CustomerCard, Void, JSONObject>{
 		
 		public CusRegTask() {
 			super();
@@ -28,20 +30,27 @@ public class UserRegisterActivity extends Activity {
 		}
 
 		@Override
-		protected Integer doInBackground(CustomerCard... customer) {
+		protected JSONObject doInBackground(CustomerCard... customer) {
 			// TODO Auto-generated method stub
 			CustomerRegServ customerRegServ = new CustomerRegServ();
-			int stat = customerRegServ.customerReg(customer[0]);
+			JSONObject stat = customerRegServ.customerReg(customer[0]);
 			return stat;
 		}
 
 		@Override
-		protected void onPostExecute(Integer stat) {
+		protected void onPostExecute(JSONObject stat) {
 			// TODO Auto-generated method stub
-			if (stat == 200) {	//OK in getStatusCode
-				Toast.makeText(getApplicationContext(), "×¢²á³É¹¦", Toast.LENGTH_SHORT).show();
-			}else {
-				Toast.makeText(getApplicationContext(), "×¢²áÊ§°Ü", Toast.LENGTH_SHORT).show();
+			try {
+				String rs = stat.getString("status");
+				if (rs.equals("success")) {	//OK in getStatusCode
+					Toast.makeText(getApplicationContext(), "×¢²á³É¹¦", Toast.LENGTH_LONG).show();
+					startActivity(new Intent(getApplicationContext(), LogIn.class));
+				}else {
+					Toast.makeText(getApplicationContext(), "×¢²áÊ§°Ü", Toast.LENGTH_SHORT).show();
+				}
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		}
 	}

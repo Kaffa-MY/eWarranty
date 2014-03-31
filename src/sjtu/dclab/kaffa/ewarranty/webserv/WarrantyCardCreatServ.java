@@ -11,34 +11,34 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.json.JSONObject;
 
-import sjtu.dclab.kaffa.ewarranty.domain.CustomerCard;
+import sjtu.dclab.kaffa.ewarranty.domain.EWarrantyCard;
 import sjtu.dclab.kaffa.ewarranty.util.ClassParse;
 import sjtu.dclab.kaffa.ewarranty.util.NetConnection;
 
-public class CustomerRegServ {
-	private static final String servName = "register";
+public class WarrantyCardCreatServ {
+	private static final String servName = "warrantycard/create";
 	private static final String hostUrl = "http://103.6.221.220:3000/api";
 	private HttpResponse response;
 
-	public JSONObject customerReg(CustomerCard customer) {
+	public JSONObject warCardCreat(EWarrantyCard card) {
 		HttpClient httpClient = NetConnection.createHttpClient();
 		String url = hostUrl + "/" + servName;
 		HttpPost httpPost = new HttpPost(url);
-		
+
 		JSONObject js = null;
 
 		List<BasicNameValuePair> pairs = new LinkedList<BasicNameValuePair>();
-		pairs.add(new BasicNameValuePair("name", customer.getName()));
-		pairs.add(new BasicNameValuePair("password", customer.getPasswd()));
-		pairs.add(new BasicNameValuePair("email", customer.getEmail()));
-		pairs.add(new BasicNameValuePair("address", customer.getAddress()));
-		pairs.add(new BasicNameValuePair("telephone", customer.getTel()));
+		pairs.add(new BasicNameValuePair("SN", card.getSerialNum()));
+		pairs.add(new BasicNameValuePair("KY", card.getModel()));
+		pairs.add(new BasicNameValuePair("customer", card.getCustomer()));
+		pairs.add(new BasicNameValuePair("creator", card.getCreator()));
+		//pairs.add(new BasicNameValuePair("telephone", customer.getTel()));
 		try {
 			httpPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8));
 			response = httpClient.execute(httpPost);
 			ClassParse classParse = new ClassParse();
 			js = classParse.HttpEntity2JsonOB(response.getEntity());
-			
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

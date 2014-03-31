@@ -17,5 +17,6 @@
     <string name="title_activity_user_info_edit">UserInfoEditActivity</string>
     <string name="title_activity_ewarranty_reg">EWarrantyRegActivity</string>
     <string name="title_activity_user_register">UserRegisterActivity</string>
+    <string name="title_activity_warrant_card_creat">WarrantCardCreat</string>
 
 </resources>

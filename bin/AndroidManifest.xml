@@ -85,6 +85,10 @@
             android:name="sjtu.dclab.kaffa.ewarranty.UserRegisterActivity"
             android:label="@string/title_activity_user_register" >
         </activity>
+        <activity
+            android:name="sjtu.dclab.kaffa.ewarranty.WarrantCardCreatActivity"
+            android:label="@string/title_activity_warrant_card_creat" >
+        </activity>
     </application>
 
 </manifest>

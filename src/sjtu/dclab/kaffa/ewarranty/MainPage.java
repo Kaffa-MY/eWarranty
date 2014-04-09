@@ -283,21 +283,12 @@ public class MainPage extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
-//		super.onActivityResult(requestCode, resultCode, data);
-//		if (resultCode == RESULT_OK) {
-//			Bundle bundle = data.getExtras();
-//			String scanRes = bundle.getString("result");
-//			Intent intent = new Intent(getApplicationContext(),EWarrantyRegActivity.class);
-//			intent.putExtra("serialNum", scanRes);
-//			//Toast.makeText(getApplicationContext(), scanRes, Toast.LENGTH_LONG).show();
-//			startActivity(intent);
-//		}
 		super.onActivityResult(requestCode, resultCode, data);
 		if (resultCode == RESULT_OK) {
 			Bundle bundle = data.getExtras();
 			String scanRes = bundle.getString("result");
 			Intent intent = new Intent(getApplicationContext(),WarrantCardCreatActivity.class);
-			intent.putExtra("serialNum", scanRes);
+			intent.putExtra("JSonQRCode", scanRes);
 			startActivity(intent);
 		}
 	}

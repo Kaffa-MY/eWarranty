@@ -67,7 +67,15 @@ public class WarrantCardCreatActivity extends Activity {
 		creatorEditText = (EditText)findViewById(R.id.creET);
 		
 		intent = getIntent();
-		snEditText.setText(intent.getStringExtra("serialNum"));
+		String json = intent.getStringExtra("JSonQRCode");
+		try {
+			JSONObject jsonObject = new JSONObject(json);
+			snEditText.setText(jsonObject.getString("SN"));
+			modelEditText.setText(jsonObject.getString("KY"));
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void warCardCreat(View view) {
